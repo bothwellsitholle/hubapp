@@ -16,30 +16,22 @@ function App() {
   return (
     <div className='App'>
 
-      {isLoggedIn && <Header />}
-
       {isLoggedIn && (
+        <>
+        <Header />
         <Route path='/' exact>
           <MainContent />
         </Route>
-      )}
-
-      {isLoggedIn && (
         <Route path='/account'>
           <MyAccount />
         </Route>
-      )}
-
-      {isLoggedIn && (
         <Route path='/settings'>
           <MySettings />
         </Route>
-      )}
-
-      {isLoggedIn && (
         <Route path='/hubinfo'>
           <MyHub />
         </Route>
+        </>
       )}
       {!isLoggedIn && (
         <div className={classes.login}>
