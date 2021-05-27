@@ -8,20 +8,18 @@ import styler from './MyHub.module.css';
 import routericon from '../../images/router2.png';
 import surficon from '../../images/gif.gif';
 
-
-
 const MyHub = () => {
   return (
     <Grid container spacing={3} alignItems='center'>
       <Grid item xs={12} sm={12}>
         <div className={styler.welcome}>
-        <Welcome title='5g Hub Network' body='Your Hub Info' />
+          <Welcome title='5g Hub Network' body='Your Hub Info' />
         </div>
       </Grid>
       <Grid item xs={12} sm={12}>
         <Paper className={styler.myHub__card} elevation={3}>
           <div className={styler.myHub__paperConteiner}>
-            <img src={routericon} alt='router' />
+            <img className={styler.surf__image} src={routericon} alt='router' />
             <div className={styler.myHub__content}>
               <h2>Hub Connection</h2>
               <p>
@@ -45,7 +43,7 @@ const MyHub = () => {
               </p>
               <p>
                 vpn connection :
-                <h6 className={styler.connect}> {/* connected */}</h6>
+                <span className={styler.connect}> {/* connected */}</span>
               </p>
             </div>
           </div>
@@ -53,7 +51,7 @@ const MyHub = () => {
       </Grid>
       <Grid item xs={12} sm={6}>
         <Paper className={styler.myHub__card} elevation={3}>
-          <img src={surficon} alt='' />
+          <img className={styler.elite__image} src={surficon} alt='' />
         </Paper>
       </Grid>
       <Grid item xs={12} sm={6}>

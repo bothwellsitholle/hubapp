@@ -134,3 +134,24 @@
   font-weight: 800;
   font-size: large;
 }
+
+@media (max-width: 640px) {
+  .form__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    z-index: 5;
+    width: 30%;
+    min-width: 300px;
+    min-height: 50vh;
+    align-self: center;
+    margin-top: 8%;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  }
+
+}

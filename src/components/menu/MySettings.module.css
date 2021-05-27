@@ -6,6 +6,7 @@
   justify-content: center;
   align-items: center;
   margin: 20px;
+  overflow-x: hidden;
 }
 
 .myAccount__card img {
@@ -19,7 +20,10 @@
 }
 
 .myAccount__content {
-  padding: 20px;
+  padding: 10px;
+  align-items: center;
+  display: flex;
+  flex-direction: column
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;800&display=swap');
@@ -30,6 +34,7 @@
   font-weight: 600 !important;
   text-align: center;
 }
+
 
 .myAccount__card p {
   font-family: Poppins, sans-serif;
@@ -83,7 +88,13 @@ button.btn__style {
   margin: 0px auto;
 }
 
-  button.btn__style:hover {
+.label input {
+  display: block;
+  align-self: center;
+  margin: 0 auto;
+}
+
+button.btn__style:hover {
   background-color: #055a8b !important;
 }
 
@@ -118,4 +129,17 @@ button.btn__style {
   display: flex;
   justify-content: space-between;
   min-width: 350px;
+}
+
+@media (max-width: 640px) {
+  .myAccount__card {
+    border-radius: 14px !important;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2) !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    overflow-x: hidden;
+  }
 }

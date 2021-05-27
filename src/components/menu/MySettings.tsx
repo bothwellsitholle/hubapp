@@ -87,7 +87,7 @@ const MySettings = () => {
           <div className={styler.myAccount__paperContainer}>
             {/* <img src={routericon} alt='router' /> */}
             <div className={styler.myAccount__content}>
-              <h2>Update Personal Infomation</h2>
+              <h2>Update Password</h2>
               <Divider
                 variant={'middle'}
                 style={{ color: 'blue', margin: '20px', marginLeft: '0px' }}
@@ -115,8 +115,11 @@ const MySettings = () => {
               )}
               <br />
               {isEditingPassword && (
-                <div className={styler.label}>
-                  Put your new password: <span></span>
+                <>
+                  <p className={styler.label}>
+                    Put your new password: <span></span>
+                  </p>
+                  <div className={styler.input__container}>
                   <Input
                     value={password}
                     type='password'
@@ -124,7 +127,8 @@ const MySettings = () => {
                       setPassword(e.target.value);
                     }}
                   />
-                </div>
+                  </div>
+                </>
               )}
               <div className={styler.myAccount__buttons}>
                 {!isEditingPassword && (

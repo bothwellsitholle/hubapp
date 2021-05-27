@@ -17,6 +17,7 @@ const useStyles = makeStyles((theme: Theme) =>
       padding: 20,
       marginLeft: 30,
       marginRight: 20,
+      overflowX: 'hidden',
     },
     header: {
       height: '160px',

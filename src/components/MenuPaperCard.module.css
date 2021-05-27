@@ -11,7 +11,7 @@
 
 .paper:hover {
   transform: scale(1.1);
-  transition: transform .5s ease-out;
+  transition: transform 0.5s ease-out;
   background-color: rgba(41, 182, 246, 0.1);
 }
 
@@ -19,8 +19,8 @@
   font-family: 'Poppins', sans-serif;
   font-weight: bold;
   font-size: 24px;
-  color: #0283cf!important;
-  margin-bottom: .3rem;
+  color: #0283cf !important;
+  margin-bottom: 0.3rem;
   line-height: 1.5;
 }
 
@@ -36,7 +36,7 @@
 }
 
 .paper div > a {
-  position:relative;
+  position: relative;
   padding: 4px 37px;
   font-size: 12px;
   border-radius: 13px;
@@ -47,19 +47,19 @@
   right: 5;
   bottom: 15;
   text-decoration: none;
-  color: #0283cf!important;
+  color: #0283cf !important;
   font-family: 'Poppins', sans-serif;
   cursor: pointer;
 }
 
 .paper div > a:hover {
-  background-color: #0283cf!important;
-  color: white!important;
+  background-color: #0283cf !important;
+  color: white !important;
   cursor: pointer;
 }
 
 .paper div > button {
-  position:relative;
+  position: relative;
   padding: 4px 37px;
   font-size: 12px;
   border-radius: 13px;
@@ -70,16 +70,23 @@
   right: 5;
   bottom: 15;
   text-decoration: none;
-  color: #0283cf!important;
+  color: #0283cf !important;
   background-color: white;
   font-family: 'Poppins', sans-serif;
   cursor: pointer;
 }
 
 .paper div > button:hover {
-  background-color: #0283cf!important;
-  color: white!important;
+  background-color: #0283cf !important;
+  color: white !important;
   cursor: pointer;
   z-index: 10;
 }
 
+@media (max-width: 640px) {
+  .paper:hover {
+    transform: scale(1.02);
+    transition: transform 0.5s ease-out;
+    background-color: rgba(41, 182, 246, 0.1);
+  }
+}

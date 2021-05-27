@@ -4,6 +4,7 @@
   margin-left: 20px;
   width: 70%;
   padding: 25px;
+  overflow-x: hidden;
 }
 
 .account__container {
@@ -52,4 +53,13 @@
 
 .account__wrapper a:hover {
   background-color: #055a8b!important;
+}
+
+@media (max-width: 640px) {
+  .account__wrapper {
+    margin-left: 20px;
+    width: 70%;
+    padding: 25px;
+    overflow-x: hidden;
+  }
 }

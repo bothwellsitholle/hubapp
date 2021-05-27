@@ -15,22 +15,21 @@ function App() {
   const isLoggedIn = authCtx.isLoggedIn;
   return (
     <div className='App'>
-
       {isLoggedIn && (
         <>
-        <Header />
-        <Route path='/' exact>
-          <MainContent />
-        </Route>
-        <Route path='/account'>
-          <MyAccount />
-        </Route>
-        <Route path='/settings'>
-          <MySettings />
-        </Route>
-        <Route path='/hubinfo'>
-          <MyHub />
-        </Route>
+          <Header />
+          <Route path='/' exact>
+            <MainContent />
+          </Route>
+          <Route path='/account'>
+            <MyAccount />
+          </Route>
+          <Route path='/settings'>
+            <MySettings />
+          </Route>
+          <Route path='/hubinfo'>
+            <MyHub />
+          </Route>
         </>
       )}
       {!isLoggedIn && (
