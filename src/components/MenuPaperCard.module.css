@@ -80,5 +80,6 @@
   background-color: #0283cf!important;
   color: white!important;
   cursor: pointer;
+  z-index: 10;
 }
 
