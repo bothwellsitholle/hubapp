@@ -2,7 +2,7 @@ import React, { useState, useRef, useContext } from 'react';
 import AuthContext from '../../store/AuthContext';
 import classes from './Login.module.css';
 import Alert from '@material-ui/lab/Alert';
-import LoadingSpinner from '../layout/LoadingSpinner';
+import LoadingSpinner from '../ui/LoadingSpinner';
 
 interface signInType {
   message: string;

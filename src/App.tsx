@@ -8,7 +8,7 @@ import MySettings from './components/menu/MySettings';
 import AuthContext from './store/AuthContext';
 import { Route } from 'react-router-dom';
 import MainContent from './components/MainContent';
-import classes from './components/Header.module.css';
+import './App.css';
 
 function App() {
   const authCtx = useContext(AuthContext);
@@ -33,7 +33,7 @@ function App() {
         </>
       )}
       {!isLoggedIn && (
-        <div className={classes.login}>
+        <div className={"login"}>
           <Login />
         </div>
       )}

@@ -3,13 +3,13 @@ import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import Divider from '@material-ui/core/Divider';
 import Welcome from '../Welcome';
-import Footer from '../layout/Footer';
+import Footer from '../ui/Footer';
 import styler from './MySettings.module.css';
 import poweroff from '../../images/pwr.gif';
 import reload from '../../images/rld2.png';
 import Input from '@material-ui/core/Input';
 import Alert from '@material-ui/lab/Alert';
-import LoadingSpinner from '../layout/LoadingSpinner';
+import LoadingSpinner from '../ui/LoadingSpinner';
 
 const MySettings = () => {
   const [isEditingPassword, setIsEditingPassword] = useState<boolean>(false);

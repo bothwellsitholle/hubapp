@@ -7,7 +7,7 @@ import profileicon from '../images/profile-icon_215px.png';
 import routericon from '../images/router2.png';
 import homeicon from '../images/home.png';
 import controlicon from '../images/control-icon.png';
-import Footer from './layout/Footer';
+import Footer from './ui/Footer';
 import Welcome from './Welcome';
 
 const useStyles = makeStyles((theme: Theme) =>

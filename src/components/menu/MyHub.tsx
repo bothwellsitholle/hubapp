@@ -3,7 +3,7 @@ import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import Divider from '@material-ui/core/Divider';
 import Welcome from '../Welcome';
-import Footer from '../layout/Footer';
+import Footer from '../ui/Footer';
 import styler from './MyHub.module.css';
 import routericon from '../../images/router2.png';
 import surficon from '../../images/gif.gif';

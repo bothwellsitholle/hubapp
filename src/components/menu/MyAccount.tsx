@@ -2,7 +2,7 @@ import React from 'react';
 import Divider from '@material-ui/core/Divider';
 import Grid from '@material-ui/core/Grid';
 import Welcome from '../Welcome';
-import Footer from '../layout/Footer';
+import Footer from '../ui/Footer';
 import styler from './MyAccount.module.css';
 
 
